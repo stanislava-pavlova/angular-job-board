@@ -1,0 +1,30 @@
+<div class="card mb-4" style="height: 15rem">
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      <h5 class="card-title">
+        {{ offer.title }}
+      </h5>
+
+      <p class="card-text">
+        <small class="text-muted"> {{ offer.type }}</small>
+      </p>
+    </div>
+
+    <p class="card-text">
+      {{ offer.category }}
+    </p>
+
+    <p class="fst-italic">
+      {{ offer.description }}
+    </p>
+
+    <button
+      class="btn btn-outline-primary btn-sm mr-2"
+      *ngIf="!isOrganisation && !hasApplied"
+      (click)="onApply(offer); onApplied(user, offer)"
+    >
+      Apply
+    </button>
+    <p *ngIf="hasApplied" class="text-success">Applied</p>
+  </div>
+</div>

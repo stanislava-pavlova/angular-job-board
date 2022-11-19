@@ -1,0 +1,20 @@
+<div class="row">
+  <a class="link mb-3" routerLink="/create-offer">Create offer</a>
+
+  <div class="col-lg-3 col-md-6" *ngFor="let offer of offers">
+    <div class="card mb-4" style="height: 15rem">
+      <div class="card-body">
+        <h5 class="card-title">{{ offer.title }}</h5>
+        <p class="card-text"> {{ offer.category }}</p>
+        <p class="fst-italic">{{ offer.type }}</p>
+        <div class="d-flex justify-content-around">
+          <button class="btn btn-warning btn-sm" [routerLink]="['/edit', offer.id]">Edit</button>
+          <button class="btn btn-primary btn-sm" routerLink="/applicants">Applicants</button>
+          <button class="btn btn-danger btn-sm" (click)="onDelete(offer.id!)">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

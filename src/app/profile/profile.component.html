@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h4 class="text-primary text-center">Edit Profile</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p *ngIf="errorMessage" class="text-danger text-center">
+        {{ errorMessage }}
+      </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name ..."
+            formControlName="name"
+          />
+
+          <app-field-error-message [control]="getFormNameErrors()"></app-field-error-message>
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email..."
+            formControlName="email"
+          />
+          <app-field-error-message [control]="getFormEmailErrors()"></app-field-error-message>
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter password..."
+            formControlName="password"
+          />
+          <app-field-error-message [control]="getFormPasswordErrors()"></app-field-error-message>
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="rePassword">Repeat Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="rePassword"
+            placeholder="Enter password again..."
+            formControlName="rePassword"
+          />
+          <app-field-error-message [control]="getFormRePasswordErrors()"></app-field-error-message>
+        </div>
+
+        <div class="form-group d-flex justify-content-around mt-4">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="formGroup.invalid"
+          >
+            Edit
+          </button>
+        </div>
+      </form>
+
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-danger mt-4" (click)="onDelete()">
+          Delete Profile
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

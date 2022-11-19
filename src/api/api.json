@@ -1,0 +1,222 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Microsoft",
+      "email": "microsoft",
+      "password": "12345",
+      "rePassword": "12345",
+      "isOrganisation": true,
+      "applications": []
+    },
+    {
+      "id": 2,
+      "name": "User",
+      "email": "user",
+      "password": "55555",
+      "rePassword": "55555",
+      "isOrganisation": false,
+      "applications": [
+        {
+          "id": 1,
+          "title": "Front-End Developer with Angular.JS",
+          "description": "We are looking for responsible and self-organized Frontend developers with Angular.",
+          "category": "Front-End Development",
+          "type": "Part-time",
+          "organisationId": 1,
+          "candidates": [
+            {
+              "name": "User",
+              "email": "user",
+              "password": "12345",
+              "rePassword": "12345",
+              "isOrganisation": false,
+              "id": 2,
+              "applications": []
+            },
+            {
+              "name": "User",
+              "email": "user",
+              "password": "12345",
+              "rePassword": "12345",
+              "isOrganisation": false,
+              "id": 2,
+              "applications": []
+            },
+            {
+              "name": "User",
+              "email": "user",
+              "password": "12345",
+              "rePassword": "12345",
+              "isOrganisation": false,
+              "id": 2,
+              "applications": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "UI/UX Designer",
+          "description": "We are expanding our team and we are looking for bright people who enjoy dynamics and are eager to learn and develop their professional skills.",
+          "category": "UI/UX, Arts",
+          "type": "Full-time",
+          "organisationId": 1,
+          "candidates": [
+            {
+              "name": "User",
+              "email": "user",
+              "password": "12345",
+              "rePassword": "12345",
+              "isOrganisation": false,
+              "id": 2,
+              "applications": [
+                {
+                  "id": 1,
+                  "title": "Front-End Developer with Angular.JS",
+                  "description": "We are looking for responsible and self-organized Frontend developers with Angular.",
+                  "category": "Front-End Development",
+                  "type": "Part-time",
+                  "organisationId": 1,
+                  "candidates": [
+                    {
+                      "name": "User",
+                      "email": "user",
+                      "password": "12345",
+                      "rePassword": "12345",
+                      "isOrganisation": false,
+                      "id": 2,
+                      "applications": []
+                    },
+                    {
+                      "name": "User",
+                      "email": "user",
+                      "password": "12345",
+                      "rePassword": "12345",
+                      "isOrganisation": false,
+                      "id": 2,
+                      "applications": []
+                    },
+                    {
+                      "name": "User",
+                      "email": "user",
+                      "password": "12345",
+                      "rePassword": "12345",
+                      "isOrganisation": false,
+                      "id": 2,
+                      "applications": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stanislava",
+      "email": "stu2101681014@uni-plovdiv.bg",
+      "password": "12345",
+      "rePassword": "12345",
+      "isOrganisation": false,
+      "applications": [],
+      "id": 3
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "title": "Front-End Developer with Angular.JS",
+      "description": "We are looking for responsible and self-organized Frontend developers with Angular.",
+      "category": "Front-End Development",
+      "type": "Part-time",
+      "organisationId": 1,
+      "candidates": [
+        {
+          "name": "User",
+          "email": "user",
+          "password": "12345",
+          "rePassword": "12345",
+          "isOrganisation": false,
+          "id": 2,
+          "applications": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "organisationId": 3,
+      "title": "Junior .NET Developer",
+      "description": "We are expanding our team and we are looking for bright people who enjoy dynamics and are eager to learn and develop their professional skills.",
+      "type": "Full-time",
+      "category": "Back-End Development",
+      "candidates": []
+    },
+    {
+      "id": 3,
+      "organisationId": 4,
+      "title": "Senior Full-Stack Java Developer",
+      "description": "Provide analysis of the integration of different information systems",
+      "type": "Remote",
+      "category": "Full-Stack Development",
+      "candidates": []
+    },
+    {
+      "id": 4,
+      "title": "UI/UX Designer",
+      "description": "We are expanding our team and we are looking for bright people who enjoy dynamics and are eager to learn and develop their professional skills.",
+      "category": "UI/UX, Arts",
+      "type": "Full-time",
+      "organisationId": 1,
+      "candidates": [
+        {
+          "name": "User",
+          "email": "user",
+          "password": "12345",
+          "rePassword": "12345",
+          "isOrganisation": false,
+          "id": 2,
+          "applications": [
+            {
+              "id": 1,
+              "title": "Front-End Developer with Angular.JS",
+              "description": "We are looking for responsible and self-organized Frontend developers with Angular.",
+              "category": "Front-End Development",
+              "type": "Part-time",
+              "organisationId": 1,
+              "candidates": [
+                {
+                  "name": "User",
+                  "email": "user",
+                  "password": "12345",
+                  "rePassword": "12345",
+                  "isOrganisation": false,
+                  "id": 2,
+                  "applications": []
+                },
+                {
+                  "name": "User",
+                  "email": "user",
+                  "password": "12345",
+                  "rePassword": "12345",
+                  "isOrganisation": false,
+                  "id": 2,
+                  "applications": []
+                },
+                {
+                  "name": "User",
+                  "email": "user",
+                  "password": "12345",
+                  "rePassword": "12345",
+                  "isOrganisation": false,
+                  "id": 2,
+                  "applications": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

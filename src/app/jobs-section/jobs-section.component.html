@@ -1,0 +1,6 @@
+  <div class="row">
+    <a class="link mb-3" *ngIf="isOrganisation" routerLink="/create-offer">Create offer</a>
+    <div class="col-lg-3 col-md-6" *ngFor="let offer of offers">
+      <app-item-card [offer]="offer"></app-item-card>
+    </div>
+  </div>
