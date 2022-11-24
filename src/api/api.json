@@ -112,15 +112,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Stanislava",
-      "email": "stu2101681014@uni-plovdiv.bg",
-      "password": "12345",
-      "rePassword": "12345",
-      "isOrganisation": false,
-      "applications": [],
-      "id": 3
     }
   ],
   "offers": [
